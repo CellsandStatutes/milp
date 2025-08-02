@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Health in NSW: 1850–2025</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0078d4;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .timeline {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .entry {
+      background: #ffffff;
+      border-left: 4px solid #0078d4;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .year {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #0078d4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mental Illness Responses in NSW Australia</h1>
+    <p>Timeline: 1850–2025</p>
+  </header>
+  <div class="timeline" id="timeline">
+    <!-- Timeline entries will be inserted by JavaScript -->
+  </div>
+
+  <script>
+    const data = [
+      { year: "1850", text: "Establishment of early lunatic asylums, such as Tarban Creek." },
+      { year: "1900s", text: "Shift toward custodial care in large psychiatric hospitals." },
+      { year: "1955", text: "Introduction of psychotropic medications begins to change treatment." },
+      { year: "1983", text: "NSW Mental Health Act passed, emphasizing patient rights." },
+      { year: "1990s", text: "Closure of institutions and move toward community care." },
+      { year: "2007", text: "NSW reforms emphasize integrated mental health services." },
+      { year: "2020", text: "COVID-19 highlights mental health infrastructure gaps." },
+      { year: "2025", text: "Expansion of digital mental health support and early intervention models." }
+    ];
+
+    const container = document.getElementById("timeline");
+    data.forEach(entry => {
+      const div = document.createElement("div");
+      div.className = "entry";
+      div.innerHTML = `<div class="year">${entry.year}</div><div>${entry.text}</div>`;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
