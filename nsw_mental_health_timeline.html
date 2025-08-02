@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSW Mental Health Timeline (1850–2025)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0057b8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .timeline {
+      max-width: 800px;
+      margin: 40px auto;
+      position: relative;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #0057b8;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    .event {
+      padding: 20px;
+      position: relative;
+      background: white;
+      border-radius: 6px;
+      width: 45%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .event.left {
+      left: 0;
+    }
+    .event.right {
+      left: 55%;
+    }
+    .event::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: #0057b8;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .event.left::before {
+      right: -10px;
+    }
+    .event.right::before {
+      left: -10px;
+    }
+    .year {
+      font-weight: bold;
+      color: #0057b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NSW Mental Health Timeline (1850–2025)</h1>
+    <p>Key interventions, reforms, and reports in mental health policy</p>
+  </header>
+  <div class="timeline">
+    <div class="event left">
+      <p class="year">1866</p>
+      <p>Gladesville Hospital becomes a central psychiatric institution in NSW.</p>
+    </div>
+    <div class="event right">
+      <p class="year">1958</p>
+      <p>NSW Mental Health Act passed, modernising psychiatric care and legal oversight.</p>
+    </div>
+    <div class="event left">
+      <p class="year">1983</p>
+      <p>Richmond Report recommends deinstitutionalisation and community-based care.</p>
+    </div>
+    <div class="event right">
+      <p class="year">2007</p>
+      <p>Mental Health Act 2007 introduced, replacing the 1990 Act and strengthening patient rights.</p>
+    </div>
+    <div class="event left">
+      <p class="year">2012</p>
+      <p>NSW Mental Health Commission established to oversee reform and policy development.</p>
+    </div>
+    <div class="event right">
+      <p class="year">2014–2024</p>
+      <p>NSW Mental Health Reform Plan launched to improve service quality and access.</p>
+    </div>
+    <div class="event left">
+      <p class="year">2020–2025</p>
+      <p>NSW Aboriginal Mental Health and Wellbeing Strategy implemented.</p>
+    </div>
+    <div class="event right">
+      <p class="year">2025</p>
+      <p>NSW Suicide Monitoring System Report released; HASI and CLS programs reviewed.</p>
+    </div>
+  </div>
+</body>
+</html>
